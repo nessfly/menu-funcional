@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: red;
+    color: black;
+    padding: 10px 0;
+  }
+  
+  
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu label {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .menu input[type="checkbox"] {
+    display: none;
+  }
+  
+  .navbar {
+    display: flex;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  
+  .navbar a:hover {
+    background-color:rgb(216, 91, 91);
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .navbar li {
+        margin: 0;
+    }
+  
+    .navbar a {
+        padding: 15px;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+    }
+  
+    .menu label {
+        display: block;
+    }
+  
+    .menu input[type="checkbox"]:checked ~ .navbar {
+        display: flex;
+    }
+  
+    .menu {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  .img-vidafit{
+    display: flex;
+    justify-content: center;
+  }
+  .vidafit{
+    width: 30%;
+    height:40vh ;
+  }
+  
+  .img-vidafit{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .vidafit{
+    width: 30%;
+    height:40vh ;
+  }
+  section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  footer{
+    width: 100%;
+    background-color:red;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #back-to-top {
+    background-color:rgb(104, 31, 31);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  #back-to-top:hover {
+    background-color:rgba(211, 76, 76, 0.541);
+  }
