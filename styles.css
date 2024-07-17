@@ -64,7 +64,7 @@
   }
   
   /* Estilos responsivos */
-  @media (max-width: 768px) {
+  @media (max-width: 200px) {
     .navbar {
         display: none;
         flex-direction: column;
@@ -118,7 +118,7 @@
   .img-vidafit{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .vidafit{
     width: 30%;
